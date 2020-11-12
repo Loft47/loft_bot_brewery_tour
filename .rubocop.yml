@@ -1,0 +1,136 @@
+require:
+  - rubocop-rails
+AllCops:
+  TargetRubyVersion: 2.7
+  Exclude:
+    - 'lib/local_resource.rb'
+    - 'lib/generated_obfuscator.rb'
+    - 'node_modules/**/*'
+    - '**/Guardfile'
+    - 'db/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+    - 'bin/**/*'
+    - 'log/**/*'
+    - 'lib/tasks/cucumber.rake'
+Metrics/BlockLength:
+  Max: 100
+Layout/LineLength:
+  Max: 120
+  AllowURI: true
+  URISchemes:
+    - http
+    - https
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+Metrics/MethodLength:
+  CountComments: false
+  Max: 15
+Style/Documentation:
+  Enabled: false
+Naming/VariableNumber:
+  Enabled: False
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/RaiseArgs:
+  Enabled: True
+Style/ClassAndModuleChildren:
+  Enabled: True
+Style/Alias:
+  EnforcedStyle: prefer_alias_method
+Style/AccessorGrouping:
+  Enabled: True
+Style/ArrayCoercion:
+  Enabled: True
+Style/BisectedAttrAccessor:
+  Enabled: True
+Style/CaseLikeIf:
+  Enabled: True
+Style/ExplicitBlockArgument:
+  Enabled: True
+Style/ExponentialNotation:
+  Enabled: True
+Style/GlobalStdStream:
+  Enabled: True
+Style/HashAsLastArrayItem:
+  Enabled: True
+Style/HashEachMethods:
+  Enabled: True
+Style/HashLikeCase:
+  Enabled: True
+Style/HashTransformKeys:
+  Enabled: True
+Style/HashTransformValues:
+  Enabled: True
+Style/OptionalBooleanParameter:
+  Enabled: True
+Style/RedundantAssignment:
+  Enabled: True
+Style/RedundantFetchBlock:
+  Enabled: True
+Style/RedundantFileExtensionInRequire:
+  Enabled: True
+Style/RedundantRegexpCharacterClass:
+  Enabled: True
+Style/RedundantRegexpEscape:
+  Enabled: True
+Style/SingleArgumentDig:
+  Enabled: True
+Style/SlicingWithRange:
+  Enabled: True
+Style/StringConcatenation:
+  Enabled: True
+Lint/BinaryOperatorWithIdenticalOperands:
+  Enabled: True
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: True
+Lint/DuplicateElsifCondition:
+  Enabled: True
+Lint/DuplicateRescueException:
+  Enabled: True
+Lint/EmptyConditionalBody:
+  Enabled: True
+Lint/FloatComparison:
+  Enabled: True
+Lint/MissingSuper:
+  Enabled: True
+Lint/MixedRegexpCaptureTypes:
+  Enabled: True
+Lint/OutOfRangeRegexpRef:
+  Enabled: True
+Lint/RaiseException:
+  Enabled: True
+Lint/SelfAssignment:
+  Enabled: True
+Lint/StructNewOverride:
+  Enabled: True
+Lint/TopLevelReturnWithArgument:
+  Enabled: True
+Lint/UnreachableLoop:
+  Enabled: True
+Rails/ActiveRecordCallbacksOrder:
+  Enabled: True
+Rails/FindById:
+  Enabled: True
+Rails/Inquiry:
+  Enabled: True
+Rails/MailerName:
+  Enabled: True
+Rails/MatchRoute:
+  Enabled: True
+Rails/NegateInclude:
+  Enabled: True
+Rails/Pluck:
+  Enabled: True
+Rails/PluckInWhere:
+  Enabled: True
+Rails/RenderInline:
+  Enabled: True
+Rails/RenderPlainText:
+  Enabled: True
+Rails/ShortI18n:
+  Enabled: True
+Rails/WhereExists:
+  Enabled: True

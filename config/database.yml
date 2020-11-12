@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  pool: <%= ENV.fetch('RAILS_MAX_THREADS') { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  url: <%= ENV.fetch('DATABASE_URL', 'postgresql://dev:dev@localhost:5432/brew_dev') %>
+
+test:
+  <<: *default
+  url: <%= ENV.fetch('DATABASE_URL_TEST', 'postgresql://dev:dev@localhost:5432/brew_test') %>
+
+production:
+  <<: *default
+  url: <%= ENV.fetch('DATABASE_URL_PROD', 'postgresql://dev:dev@localhost:5432/brew_prod') %>
