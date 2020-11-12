@@ -1,3 +1,5 @@
+# LoftBot Brewery Tour
+![LoftBot](https://avatars1.githubusercontent.com/u/28960356)
 # Problem
 
 LoftBot our self driving robot has acquired a taste for beer. LoftBot is planing a vacation to Washington State and would like to compile a list of breweries to visit. After a quick search we found a website we could use to compile our list: [Open Brewery Database](https://www.openbrewerydb.org/documentation/01-listbreweries)
